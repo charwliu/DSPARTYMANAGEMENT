@@ -8,6 +8,7 @@
 
 package org.tmf.dsmapi.individual.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
@@ -33,7 +34,7 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
-import org.tmf.dsmapi.commons.utils.CustomDateTimeAdapter;
+import org.tmf.dsmapi.commons.utils.CustomJsonDateSerializer;
 
 
 /**
@@ -112,7 +113,7 @@ public class Individual
 {
 
     private final static long serialVersionUID = 11L;
-    protected Long id;
+    protected String id;
     protected String href;
     protected String gender;
     protected String placeOfBirth;
@@ -120,7 +121,7 @@ public class Individual
     protected String nationality;
     protected String maritalStatus;
     @XmlElement(type = String.class)
-    @XmlJavaTypeAdapter(CustomDateTimeAdapter.class)
+    @JsonSerialize(using = CustomJsonDateSerializer.class)
     @XmlSchemaType(name = "dateTime")
     protected Date birthDate;
     protected String title;
@@ -144,13 +145,12 @@ public class Individual
      * 
      * @return
      *     possible object is
-     *     {@link Long }
+     *     {@link String }
      *     
      */
     @Id
     @Column(name = "ID", scale = 0)
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
@@ -159,10 +159,10 @@ public class Individual
      * 
      * @param value
      *     allowed object is
-     *     {@link Long }
+     *     {@link String }
      *     
      */
-    public void setId(Long value) {
+    public void setId(String value) {
         this.id = value;
     }
 

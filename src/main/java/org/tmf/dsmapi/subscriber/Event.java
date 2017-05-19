@@ -35,12 +35,6 @@ public class Event extends HttpServlet {
         notification.setDateEvent(new Date());
         ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
 
-//        DataInputStream in = new DataInputStream(request.getInputStream());
-//        byte[] buffer = new byte[256];
-//        int bytesRead = 0;
-//        while ((bytesRead = in.read(buffer)) != -1) {
-//            byteOut.write(buffer, 0, bytesRead);
-//        notification.setEvent(byteOut.toByteArray());
         BufferedReader in = new BufferedReader(new InputStreamReader(request.getInputStream()));
         String line = null;
         StringBuilder responseData = new StringBuilder();
@@ -49,7 +43,10 @@ public class Event extends HttpServlet {
             responseData.append(line);
         }
         
+<<<<<<< HEAD
         
+=======
+>>>>>>> upstream/develop
         notification.setEvent(responseData.toString().getBytes());
 
         try {
