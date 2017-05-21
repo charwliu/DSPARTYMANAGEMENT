@@ -190,64 +190,6 @@ public class IndividualAdminResource {
     public List<IndividualEvent> findAllEvents() {
         return eventFacade.findAll();
     }
-    
-    @GET
-    @Produces({"application/json"})
-    @Path("proto")
-    public Individual proto() {
-        Individual individual = new Individual();
-        
-        Date bd = new Date();
-        individual.setBirthDate(bd);
-        
-        List<Characteristic> clist = new ArrayList<Characteristic>();
-        individual.setCharacteristic(clist);
-        
-        List<ContactMedium> cmlist  = new ArrayList<ContactMedium>();
-        individual.setContactMedium(cmlist);
-        
-        individual.setCountryOfBirth("CountryOfBirth");
-        
-        List<Disability> dis = new ArrayList<Disability>();  
-        individual.setDisability(dis);
-        
-        List<ExternalReference> er = new ArrayList<ExternalReference>();
-        individual.setExternalReference(er);
-        
-        individual.setFamilyName("FamilyName");
-        individual.setFormattedName("FormattedName");
-        individual.setFullName("FullName");
-        individual.setGender("Gender");
-        
-        individual.setGivenName("GivenName");
-        
-        individual.setHref("Href");
-        Long xxx = new Long(42);
-        
-        individual.setId(xxx);
-        
-        List<IndividualIdentification> ident = new ArrayList<IndividualIdentification>();      
-        individual.setIndividualIdentification(ident);
-        
-        individual.setLocation("Location");
-        individual.setMaritalStatus("MaritalStatus");
-        
-        individual.setMiddleName("MiddleName");
-        individual.setNationality("Nationality");
-        
-        List<OtherName> ot = new ArrayList<OtherName>();    
-        individual.setOtherName(ot);
-        
-        individual.setPlaceOfBirth("PlaceOfBirth");
-        
-        List<RelatedParty> rp = new ArrayList<RelatedParty>(); 
-                
-        individual.setRelatedParty(rp);
-        
-        individual.setStatus("Status");
-        individual.setTitle("Title");
-        return individual;
-    }
 
     @GET
     @Produces({"application/json"})

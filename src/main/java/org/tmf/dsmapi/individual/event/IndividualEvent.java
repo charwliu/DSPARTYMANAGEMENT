@@ -30,17 +30,13 @@ import org.tmf.dsmapi.individual.model.Individual;
 @XmlRootElement
 @Entity
 @Table(name="Event_Individual")
-<<<<<<< HEAD
-//@JsonPropertyOrder(value = {"eventTime", "eventType", "event"})
-=======
 //@JsonPropertyOrder(value = {"eventTime", "eventType", "resource"})
->>>>>>> upstream/develop
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 public class IndividualEvent implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @JsonIgnore
+//    @JsonIgnore
     private String id;
 
     @Temporal(TemporalType.TIMESTAMP)
@@ -51,11 +47,7 @@ public class IndividualEvent implements Serializable {
     private IndividualEventTypeEnum eventType;
 
     
-<<<<<<< HEAD
-    private Individual event; //check for object
-=======
     private Individual resource; //check for object
->>>>>>> upstream/develop
 
     @JsonProperty("eventId")
     public String getId() {
@@ -83,21 +75,12 @@ public class IndividualEvent implements Serializable {
     }
     
     @JsonIgnore
-<<<<<<< HEAD
-    public Individual getEvent() {
-        return event;
-    }
- 
-    public void setEvent(Individual event) {
-        this.event = event;
-=======
     public Individual getResource() {
         return resource;
     }
  
     public void setResource(Individual resource) {
         this.resource = resource;
->>>>>>> upstream/develop
     }
 
     @Override
@@ -117,30 +100,10 @@ public class IndividualEvent implements Serializable {
     
        
     }
-<<<<<<< HEAD
-    
-    @JsonAutoDetect(fieldVisibility = ANY)
-    class EventBody {
-        private Individual individual;
-        public Individual getIndividual() {
-            return individual;
-        }
-        public EventBody(Individual individual) { 
-        this.individual = individual;
-    }
-    
-       
-    }
-   @JsonProperty("event")
-   public EventBody getEventBody() {
-       
-       return new EventBody(getEvent() );
-=======
    @JsonProperty("event")
    public EventBody getEvent() {
        
        return new EventBody(getResource() );
->>>>>>> upstream/develop
    }
 
 }

@@ -26,23 +26,14 @@ import org.tmf.dsmapi.individual.model.Organization;
 
 @XmlRootElement
 @Entity
-<<<<<<< HEAD
-@Table(name="Event_Organization")
-//@JsonPropertyOrder(value = {"id", "eventTime", "eventType", "event"})
-=======
 @Table(name = "Event_Organization")
 //@JsonPropertyOrder(value = {"id", "eventTime", "eventType", "resource"})
->>>>>>> upstream/develop
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 public class OrganizationEvent implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-<<<<<<< HEAD
-    @JsonIgnore
-=======
     //@JsonIgnore
->>>>>>> upstream/develop
     private String id;
     @Temporal(TemporalType.TIMESTAMP)
     @JsonSerialize(using = CustomJsonDateSerializer.class)
@@ -51,11 +42,6 @@ public class OrganizationEvent implements Serializable {
     private OrganizationEventTypeEnum eventType;
     private Organization resource; //check for object
 
-<<<<<<< HEAD
-    private Organization event; //check for object
-
-=======
->>>>>>> upstream/develop
     @JsonProperty("eventId")
     public String getId() {
         return id;
@@ -82,13 +68,8 @@ public class OrganizationEvent implements Serializable {
     }
 
     @JsonIgnore
-<<<<<<< HEAD
-    public Organization getEvent() {
-        return event;
-=======
     public Organization getResource() {
         return resource;
->>>>>>> upstream/develop
     }
 
     public void setResource(Organization resource) {
@@ -114,30 +95,9 @@ public class OrganizationEvent implements Serializable {
         }
     }
 
-<<<<<<< HEAD
-    @JsonAutoDetect(fieldVisibility = ANY)
-    class EventBody {
-        private Organization organization;
-        public Organization getIndividual() {
-            return organization;
-        }
-        public EventBody(Organization organization) { 
-        this.organization = organization;
-    }
-    
-       
-    }
-   @JsonProperty("event")
-   public OrganizationEvent.EventBody getEventBody() {
-       
-       return new OrganizationEvent.EventBody(getEvent() );
-   }
-
-=======
     @JsonProperty("event")
     public EventBody getEvent() {
 
         return new EventBody(getResource());
     }
->>>>>>> upstream/develop
 }

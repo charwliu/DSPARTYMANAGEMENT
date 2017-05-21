@@ -43,10 +43,6 @@ public class Event extends HttpServlet {
             responseData.append(line);
         }
         
-<<<<<<< HEAD
-        
-=======
->>>>>>> upstream/develop
         notification.setEvent(responseData.toString().getBytes());
 
         try {

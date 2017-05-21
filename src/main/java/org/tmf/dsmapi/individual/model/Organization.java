@@ -94,7 +94,7 @@ public class Organization
     private final static long serialVersionUID = 11L;
     protected String id;
     protected String href;
-    protected boolean isLegalEntity;
+    protected String isLegalEntity;
     protected String type;
     protected ExistsDuring existsDuring;
     protected String tradingName;
@@ -171,7 +171,7 @@ public class Organization
      */
     @Basic
     @Column(name = "IS_LEGAL_ENTITY", length = 255)
-    public boolean getIsLegalEntity() {
+    public String getIsLegalEntity() {
         return isLegalEntity;
     }
 
@@ -183,7 +183,7 @@ public class Organization
      *     {@link String }
      *     
      */
-    public void setIsLegalEntity(boolean value) {
+    public void setIsLegalEntity(String value) {
         this.isLegalEntity = value;
     }
 

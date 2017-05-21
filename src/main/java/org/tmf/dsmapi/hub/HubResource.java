@@ -104,11 +104,7 @@ public class HubResource {
     @Path("proto/individual/event")
     public IndividualEvent protoindividualevent() {
         IndividualEvent event = new IndividualEvent();
-<<<<<<< HEAD
-        IndividualEventTypeEnum x = IndividualEventTypeEnum.IndividualCreationNotification;
-=======
         IndividualEventTypeEnum x = IndividualEventTypeEnum.IndividualCreateNotification;
->>>>>>> upstream/develop
         event.setEventType(x);
         event.setEventTime(new Date());
         event.setId("42");
@@ -138,14 +134,8 @@ public class HubResource {
 
         individual.setGivenName("GivenName");
 
-<<<<<<< HEAD
-        individual.setHref("Href");
-        Long xxx = new Long(42);
-
-=======
         individual.setHref("http://serverLocalisation:port/DSPartyManagement/api/partyManagement/v2/individual/42");
         String xxx = "42";
->>>>>>> upstream/develop
         individual.setId(xxx);
 
         List<IndividualIdentification> ident = new ArrayList<IndividualIdentification>();
@@ -169,11 +159,7 @@ public class HubResource {
         individual.setStatus("Status");
         individual.setTitle("Title");
 
-<<<<<<< HEAD
-        event.setEvent(individual);
-=======
         event.setResource(individual);
->>>>>>> upstream/develop
         return event;
     }
     
@@ -182,11 +168,7 @@ public class HubResource {
     @Path("proto/organization/event")
     public OrganizationEvent protoorganizationevent() {
         OrganizationEvent event = new OrganizationEvent();
-<<<<<<< HEAD
-        OrganizationEventTypeEnum eventType = OrganizationEventTypeEnum.OrganizationCreationNotification;
-=======
         OrganizationEventTypeEnum eventType = OrganizationEventTypeEnum.OrganizationCreateNotification;
->>>>>>> upstream/develop
         event.setEventType(eventType);
         event.setEventTime(new Date());
         event.setId("42");
@@ -204,15 +186,9 @@ public class HubResource {
         organization.setExternalReference(erList);
         
         
-<<<<<<< HEAD
-        organization.setHref("Href");
-        organization.setId(new Long(42));
-        organization.setIsLegalEntity(true);
-=======
         organization.setHref("http://serverLocalisation:port/DSPartyManagement/api/partyManagement/v2/organization/42");
         organization.setId("42");
         organization.setIsLegalEntity("IsLegalEntity");
->>>>>>> upstream/develop
         organization.setNameType("NameType");
         OrganizationChildRelationship ock = new OrganizationChildRelationship();
         organization.setOrganizationChildRelationship(ock);
@@ -230,11 +206,7 @@ public class HubResource {
         organization.setStatus("Status");
         organization.setTradingName("TradingName");
         organization.setType("Type");
-<<<<<<< HEAD
-        event.setEvent(organization);
-=======
         event.setResource(organization);
->>>>>>> upstream/develop
         return event;
     }
 
