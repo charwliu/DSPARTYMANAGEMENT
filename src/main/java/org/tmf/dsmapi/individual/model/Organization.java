@@ -1,8 +1,8 @@
 //
-// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
-// Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2015.03.24 à 11:43:05 AM CET 
+// 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
+// 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// 在重新编译源模式时, 对此文件的所有修改都将丢失。
+// 生成时间: 2017.05.21 时间 01:29:00 PM CST 
 //
 
 
@@ -31,35 +31,35 @@ import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 
 /**
- * <p>Classe Java pour Organization complex type.
+ * <p>Organization complex type的 Java 类。
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
- * &lt;complexType name="Organization">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="href" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="isLegalEntity" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="existsDuring" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}ExistsDuring" minOccurs="0"/>
- *         &lt;element name="tradingName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="nameType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="otherName" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}OtherName" minOccurs="0"/>
- *         &lt;element name="characteristic" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}Characteristic" minOccurs="0"/>
- *         &lt;element name="organizationIdentification" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}OrganizationIdentification" minOccurs="0"/>
- *         &lt;element name="externalReference" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}ExternalReference" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="relatedParty" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}RelatedParty" minOccurs="0"/>
- *         &lt;element name="organizationParentRelationship" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}OrganizationParentRelationship" minOccurs="0"/>
- *         &lt;element name="organizationChildRelationship" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}OrganizationChildRelationship" minOccurs="0"/>
- *         &lt;element name="contactMedium" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}ContactMedium" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Organization"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="href" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="isLegalEntity" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="existsDuring" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}ExistsDuring" minOccurs="0"/&gt;
+ *         &lt;element name="tradingName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="nameType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="otherName" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}OtherName" minOccurs="0"/&gt;
+ *         &lt;element name="characteristic" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}Characteristic" minOccurs="0"/&gt;
+ *         &lt;element name="organizationIdentification" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}OrganizationIdentification" minOccurs="0"/&gt;
+ *         &lt;element name="externalReference" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}ExternalReference" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="relatedParty" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}RelatedParty" minOccurs="0"/&gt;
+ *         &lt;element name="organizationParentRelationship" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}OrganizationParentRelationship" minOccurs="0"/&gt;
+ *         &lt;element name="organizationChildRelationship" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}OrganizationChildRelationship" minOccurs="0"/&gt;
+ *         &lt;element name="contactMedium" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}ContactMedium" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -110,7 +110,7 @@ public class Organization
     protected List<ContactMedium> contactMedium;
 
     /**
-     * Obtient la valeur de la propriété id.
+     * 获取id属性的值。
      * 
      * @return
      *     possible object is
@@ -124,7 +124,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété id.
+     * 设置id属性的值。
      * 
      * @param value
      *     allowed object is
@@ -136,7 +136,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété href.
+     * 获取href属性的值。
      * 
      * @return
      *     possible object is
@@ -150,7 +150,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété href.
+     * 设置href属性的值。
      * 
      * @param value
      *     allowed object is
@@ -162,7 +162,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété isLegalEntity.
+     * 获取isLegalEntity属性的值。
      * 
      * @return
      *     possible object is
@@ -176,7 +176,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété isLegalEntity.
+     * 设置isLegalEntity属性的值。
      * 
      * @param value
      *     allowed object is
@@ -188,7 +188,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété type.
+     * 获取type属性的值。
      * 
      * @return
      *     possible object is
@@ -202,7 +202,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété type.
+     * 设置type属性的值。
      * 
      * @param value
      *     allowed object is
@@ -214,7 +214,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété existsDuring.
+     * 获取existsDuring属性的值。
      * 
      * @return
      *     possible object is
@@ -230,7 +230,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété existsDuring.
+     * 设置existsDuring属性的值。
      * 
      * @param value
      *     allowed object is
@@ -242,7 +242,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété tradingName.
+     * 获取tradingName属性的值。
      * 
      * @return
      *     possible object is
@@ -256,7 +256,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété tradingName.
+     * 设置tradingName属性的值。
      * 
      * @param value
      *     allowed object is
@@ -268,7 +268,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété nameType.
+     * 获取nameType属性的值。
      * 
      * @return
      *     possible object is
@@ -282,7 +282,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété nameType.
+     * 设置nameType属性的值。
      * 
      * @param value
      *     allowed object is
@@ -294,7 +294,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété status.
+     * 获取status属性的值。
      * 
      * @return
      *     possible object is
@@ -308,7 +308,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété status.
+     * 设置status属性的值。
      * 
      * @param value
      *     allowed object is
@@ -320,7 +320,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété otherName.
+     * 获取otherName属性的值。
      * 
      * @return
      *     possible object is
@@ -336,7 +336,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété otherName.
+     * 设置otherName属性的值。
      * 
      * @param value
      *     allowed object is
@@ -348,7 +348,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété characteristic.
+     * 获取characteristic属性的值。
      * 
      * @return
      *     possible object is
@@ -364,7 +364,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété characteristic.
+     * 设置characteristic属性的值。
      * 
      * @param value
      *     allowed object is
@@ -376,7 +376,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété organizationIdentification.
+     * 获取organizationIdentification属性的值。
      * 
      * @return
      *     possible object is
@@ -392,7 +392,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété organizationIdentification.
+     * 设置organizationIdentification属性的值。
      * 
      * @param value
      *     allowed object is
@@ -445,7 +445,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété relatedParty.
+     * 获取relatedParty属性的值。
      * 
      * @return
      *     possible object is
@@ -461,7 +461,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété relatedParty.
+     * 设置relatedParty属性的值。
      * 
      * @param value
      *     allowed object is
@@ -473,7 +473,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété organizationParentRelationship.
+     * 获取organizationParentRelationship属性的值。
      * 
      * @return
      *     possible object is
@@ -489,7 +489,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété organizationParentRelationship.
+     * 设置organizationParentRelationship属性的值。
      * 
      * @param value
      *     allowed object is
@@ -501,7 +501,7 @@ public class Organization
     }
 
     /**
-     * Obtient la valeur de la propriété organizationChildRelationship.
+     * 获取organizationChildRelationship属性的值。
      * 
      * @return
      *     possible object is
@@ -517,7 +517,7 @@ public class Organization
     }
 
     /**
-     * Définit la valeur de la propriété organizationChildRelationship.
+     * 设置organizationChildRelationship属性的值。
      * 
      * @param value
      *     allowed object is

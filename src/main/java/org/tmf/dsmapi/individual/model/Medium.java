@@ -1,8 +1,8 @@
 //
-// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
-// Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2015.03.24 à 11:43:05 AM CET 
+// 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
+// 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// 在重新编译源模式时, 对此文件的所有修改都将丢失。
+// 生成时间: 2017.05.21 时间 01:29:00 PM CST 
 //
 
 
@@ -22,33 +22,32 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
-import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 
 /**
- * <p>Classe Java pour Medium complex type.
+ * <p>Medium complex type的 Java 类。
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
- * &lt;complexType name="Medium">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="country" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="postcode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="stateOrProvince" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="streetOne" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="streetTwo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="emailAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="number" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Medium"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="country" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="postcode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="stateOrProvince" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="streetOne" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="streetTwo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="emailAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="number" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -83,11 +82,11 @@ public class Medium
     protected String emailAddress;
     protected String type;
     protected String number;
-    @JsonIgnore
+    @XmlAttribute(name = "Hjid")
     protected Long hjid;
 
     /**
-     * Obtient la valeur de la propriété city.
+     * 获取city属性的值。
      * 
      * @return
      *     possible object is
@@ -101,7 +100,7 @@ public class Medium
     }
 
     /**
-     * Définit la valeur de la propriété city.
+     * 设置city属性的值。
      * 
      * @param value
      *     allowed object is
@@ -113,7 +112,7 @@ public class Medium
     }
 
     /**
-     * Obtient la valeur de la propriété country.
+     * 获取country属性的值。
      * 
      * @return
      *     possible object is
@@ -127,7 +126,7 @@ public class Medium
     }
 
     /**
-     * Définit la valeur de la propriété country.
+     * 设置country属性的值。
      * 
      * @param value
      *     allowed object is
@@ -139,7 +138,7 @@ public class Medium
     }
 
     /**
-     * Obtient la valeur de la propriété postcode.
+     * 获取postcode属性的值。
      * 
      * @return
      *     possible object is
@@ -153,7 +152,7 @@ public class Medium
     }
 
     /**
-     * Définit la valeur de la propriété postcode.
+     * 设置postcode属性的值。
      * 
      * @param value
      *     allowed object is
@@ -165,7 +164,7 @@ public class Medium
     }
 
     /**
-     * Obtient la valeur de la propriété stateOrProvince.
+     * 获取stateOrProvince属性的值。
      * 
      * @return
      *     possible object is
@@ -179,7 +178,7 @@ public class Medium
     }
 
     /**
-     * Définit la valeur de la propriété stateOrProvince.
+     * 设置stateOrProvince属性的值。
      * 
      * @param value
      *     allowed object is
@@ -191,7 +190,7 @@ public class Medium
     }
 
     /**
-     * Obtient la valeur de la propriété streetOne.
+     * 获取streetOne属性的值。
      * 
      * @return
      *     possible object is
@@ -205,7 +204,7 @@ public class Medium
     }
 
     /**
-     * Définit la valeur de la propriété streetOne.
+     * 设置streetOne属性的值。
      * 
      * @param value
      *     allowed object is
@@ -217,7 +216,7 @@ public class Medium
     }
 
     /**
-     * Obtient la valeur de la propriété streetTwo.
+     * 获取streetTwo属性的值。
      * 
      * @return
      *     possible object is
@@ -231,7 +230,7 @@ public class Medium
     }
 
     /**
-     * Définit la valeur de la propriété streetTwo.
+     * 设置streetTwo属性的值。
      * 
      * @param value
      *     allowed object is
@@ -243,7 +242,7 @@ public class Medium
     }
 
     /**
-     * Obtient la valeur de la propriété emailAddress.
+     * 获取emailAddress属性的值。
      * 
      * @return
      *     possible object is
@@ -257,7 +256,7 @@ public class Medium
     }
 
     /**
-     * Définit la valeur de la propriété emailAddress.
+     * 设置emailAddress属性的值。
      * 
      * @param value
      *     allowed object is
@@ -269,7 +268,7 @@ public class Medium
     }
 
     /**
-     * Obtient la valeur de la propriété type.
+     * 获取type属性的值。
      * 
      * @return
      *     possible object is
@@ -283,7 +282,7 @@ public class Medium
     }
 
     /**
-     * Définit la valeur de la propriété type.
+     * 设置type属性的值。
      * 
      * @param value
      *     allowed object is
@@ -295,7 +294,7 @@ public class Medium
     }
 
     /**
-     * Obtient la valeur de la propriété number.
+     * 获取number属性的值。
      * 
      * @return
      *     possible object is
@@ -309,7 +308,7 @@ public class Medium
     }
 
     /**
-     * Définit la valeur de la propriété number.
+     * 设置number属性的值。
      * 
      * @param value
      *     allowed object is
@@ -321,7 +320,7 @@ public class Medium
     }
 
     /**
-     * Obtient la valeur de la propriété hjid.
+     * 获取hjid属性的值。
      * 
      * @return
      *     possible object is
@@ -337,7 +336,7 @@ public class Medium
     }
 
     /**
-     * Définit la valeur de la propriété hjid.
+     * 设置hjid属性的值。
      * 
      * @param value
      *     allowed object is

@@ -1,8 +1,8 @@
 //
-// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
-// Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2015.03.24 à 11:43:05 AM CET 
+// 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
+// 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// 在重新编译源模式时, 对此文件的所有修改都将丢失。
+// 生成时间: 2017.05.21 时间 01:29:00 PM CST 
 //
 
 
@@ -34,23 +34,23 @@ import org.tmf.dsmapi.commons.utils.CustomJsonDateSerializer;
 
 
 /**
- * <p>Classe Java pour IndividualIdentification complex type.
+ * <p>IndividualIdentification complex type的 Java 类。
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
- * &lt;complexType name="IndividualIdentification">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="identificationId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="issuingAuthority" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="issuingDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="IndividualIdentification"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="identificationId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="issuingAuthority" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="issuingDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -82,7 +82,7 @@ public class IndividualIdentification
     protected Long hjid;
 
     /**
-     * Obtient la valeur de la propriété type.
+     * 获取type属性的值。
      * 
      * @return
      *     possible object is
@@ -96,7 +96,7 @@ public class IndividualIdentification
     }
 
     /**
-     * Définit la valeur de la propriété type.
+     * 设置type属性的值。
      * 
      * @param value
      *     allowed object is
@@ -108,7 +108,7 @@ public class IndividualIdentification
     }
 
     /**
-     * Obtient la valeur de la propriété identificationId.
+     * 获取identificationId属性的值。
      * 
      * @return
      *     possible object is
@@ -122,7 +122,7 @@ public class IndividualIdentification
     }
 
     /**
-     * Définit la valeur de la propriété identificationId.
+     * 设置identificationId属性的值。
      * 
      * @param value
      *     allowed object is
@@ -134,7 +134,7 @@ public class IndividualIdentification
     }
 
     /**
-     * Obtient la valeur de la propriété issuingAuthority.
+     * 获取issuingAuthority属性的值。
      * 
      * @return
      *     possible object is
@@ -148,7 +148,7 @@ public class IndividualIdentification
     }
 
     /**
-     * Définit la valeur de la propriété issuingAuthority.
+     * 设置issuingAuthority属性的值。
      * 
      * @param value
      *     allowed object is
@@ -160,7 +160,7 @@ public class IndividualIdentification
     }
 
     /**
-     * Obtient la valeur de la propriété issuingDate.
+     * 获取issuingDate属性的值。
      * 
      * @return
      *     possible object is
@@ -175,7 +175,7 @@ public class IndividualIdentification
     }
 
     /**
-     * Définit la valeur de la propriété issuingDate.
+     * 设置issuingDate属性的值。
      * 
      * @param value
      *     allowed object is
@@ -187,7 +187,7 @@ public class IndividualIdentification
     }
 
     /**
-     * Obtient la valeur de la propriété hjid.
+     * 获取hjid属性的值。
      * 
      * @return
      *     possible object is
@@ -203,7 +203,7 @@ public class IndividualIdentification
     }
 
     /**
-     * Définit la valeur de la propriété hjid.
+     * 设置hjid属性的值。
      * 
      * @param value
      *     allowed object is

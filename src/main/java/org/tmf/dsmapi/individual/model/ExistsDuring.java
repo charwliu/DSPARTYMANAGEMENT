@@ -1,8 +1,8 @@
 //
-// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
-// Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2015.03.24 à 11:43:05 AM CET 
+// 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
+// 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// 在重新编译源模式时, 对此文件的所有修改都将丢失。
+// 生成时间: 2017.05.21 时间 01:29:00 PM CST 
 //
 
 
@@ -23,32 +23,30 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 import org.tmf.dsmapi.commons.utils.CustomJsonDateSerializer;
 
 
 /**
- * <p>Classe Java pour ExistsDuring complex type.
+ * <p>ExistsDuring complex type的 Java 类。
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
- * &lt;complexType name="ExistsDuring">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="startDateTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="endDateTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ExistsDuring"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="startDateTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *         &lt;element name="endDateTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -79,7 +77,7 @@ public class ExistsDuring
     protected Long hjid;
 
     /**
-     * Obtient la valeur de la propriété startDateTime.
+     * 获取startDateTime属性的值。
      * 
      * @return
      *     possible object is
@@ -94,7 +92,7 @@ public class ExistsDuring
     }
 
     /**
-     * Définit la valeur de la propriété startDateTime.
+     * 设置startDateTime属性的值。
      * 
      * @param value
      *     allowed object is
@@ -106,7 +104,7 @@ public class ExistsDuring
     }
 
     /**
-     * Obtient la valeur de la propriété endDateTime.
+     * 获取endDateTime属性的值。
      * 
      * @return
      *     possible object is
@@ -121,7 +119,7 @@ public class ExistsDuring
     }
 
     /**
-     * Définit la valeur de la propriété endDateTime.
+     * 设置endDateTime属性的值。
      * 
      * @param value
      *     allowed object is
@@ -133,7 +131,7 @@ public class ExistsDuring
     }
 
     /**
-     * Obtient la valeur de la propriété hjid.
+     * 获取hjid属性的值。
      * 
      * @return
      *     possible object is
@@ -149,7 +147,7 @@ public class ExistsDuring
     }
 
     /**
-     * Définit la valeur de la propriété hjid.
+     * 设置hjid属性的值。
      * 
      * @param value
      *     allowed object is

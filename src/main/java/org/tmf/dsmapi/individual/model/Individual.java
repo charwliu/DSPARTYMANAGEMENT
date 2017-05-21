@@ -1,8 +1,8 @@
 //
-// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
-// Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2015.03.24 à 11:43:05 AM CET 
+// 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
+// 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// 在重新编译源模式时, 对此文件的所有修改都将丢失。
+// 生成时间: 2017.05.21 时间 01:29:00 PM CST 
 //
 
 
@@ -38,42 +38,42 @@ import org.tmf.dsmapi.commons.utils.CustomJsonDateSerializer;
 
 
 /**
- * <p>Classe Java pour Individual complex type.
+ * <p>Individual complex type的 Java 类。
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
- * &lt;complexType name="Individual">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="href" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="gender" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="placeOfBirth" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="countryOfBirth" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="nationality" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="maritalStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="birthDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="givenName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="familyName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="middleName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="fullName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="formattedName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="location" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="disability" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}Disability" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="characteristic" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}Characteristic" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="otherName" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}OtherName" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="individualIdentification" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}IndividualIdentification" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="externalReference" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}ExternalReference" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="relatedParty" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}RelatedParty" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="contactMedium" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}ContactMedium" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Individual"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="href" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="gender" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="placeOfBirth" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="countryOfBirth" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="nationality" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="maritalStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="birthDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="givenName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="familyName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="middleName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="fullName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="formattedName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="location" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="disability" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}Disability" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="characteristic" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}Characteristic" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="otherName" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}OtherName" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="individualIdentification" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}IndividualIdentification" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="externalReference" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}ExternalReference" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="relatedParty" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}RelatedParty" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="contactMedium" type="{http://orange.com/api/partyManagement/tmf/v2/model/business}ContactMedium" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -141,21 +141,22 @@ public class Individual
     protected List<ContactMedium> contactMedium;
 
     /**
-     * Obtient la valeur de la propriété id.
+     * 获取id属性的值。
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Long }
      *     
      */
     @Id
-    @Column(name = "ID", scale = 0)
+    @Column(name = "ID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public String getId() {
         return id;
     }
 
     /**
-     * Définit la valeur de la propriété id.
+     * 设置id属性的值。
      * 
      * @param value
      *     allowed object is
@@ -167,7 +168,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété href.
+     * 获取href属性的值。
      * 
      * @return
      *     possible object is
@@ -181,7 +182,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété href.
+     * 设置href属性的值。
      * 
      * @param value
      *     allowed object is
@@ -193,7 +194,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété gender.
+     * 获取gender属性的值。
      * 
      * @return
      *     possible object is
@@ -207,7 +208,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété gender.
+     * 设置gender属性的值。
      * 
      * @param value
      *     allowed object is
@@ -219,7 +220,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété placeOfBirth.
+     * 获取placeOfBirth属性的值。
      * 
      * @return
      *     possible object is
@@ -233,7 +234,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété placeOfBirth.
+     * 设置placeOfBirth属性的值。
      * 
      * @param value
      *     allowed object is
@@ -245,7 +246,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété countryOfBirth.
+     * 获取countryOfBirth属性的值。
      * 
      * @return
      *     possible object is
@@ -259,7 +260,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété countryOfBirth.
+     * 设置countryOfBirth属性的值。
      * 
      * @param value
      *     allowed object is
@@ -271,7 +272,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété nationality.
+     * 获取nationality属性的值。
      * 
      * @return
      *     possible object is
@@ -285,7 +286,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété nationality.
+     * 设置nationality属性的值。
      * 
      * @param value
      *     allowed object is
@@ -297,7 +298,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété maritalStatus.
+     * 获取maritalStatus属性的值。
      * 
      * @return
      *     possible object is
@@ -311,7 +312,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété maritalStatus.
+     * 设置maritalStatus属性的值。
      * 
      * @param value
      *     allowed object is
@@ -323,7 +324,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété birthDate.
+     * 获取birthDate属性的值。
      * 
      * @return
      *     possible object is
@@ -338,7 +339,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété birthDate.
+     * 设置birthDate属性的值。
      * 
      * @param value
      *     allowed object is
@@ -350,7 +351,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété title.
+     * 获取title属性的值。
      * 
      * @return
      *     possible object is
@@ -364,7 +365,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété title.
+     * 设置title属性的值。
      * 
      * @param value
      *     allowed object is
@@ -376,7 +377,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété givenName.
+     * 获取givenName属性的值。
      * 
      * @return
      *     possible object is
@@ -390,7 +391,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété givenName.
+     * 设置givenName属性的值。
      * 
      * @param value
      *     allowed object is
@@ -402,7 +403,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété familyName.
+     * 获取familyName属性的值。
      * 
      * @return
      *     possible object is
@@ -416,7 +417,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété familyName.
+     * 设置familyName属性的值。
      * 
      * @param value
      *     allowed object is
@@ -428,7 +429,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété middleName.
+     * 获取middleName属性的值。
      * 
      * @return
      *     possible object is
@@ -442,7 +443,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété middleName.
+     * 设置middleName属性的值。
      * 
      * @param value
      *     allowed object is
@@ -454,7 +455,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété fullName.
+     * 获取fullName属性的值。
      * 
      * @return
      *     possible object is
@@ -468,7 +469,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété fullName.
+     * 设置fullName属性的值。
      * 
      * @param value
      *     allowed object is
@@ -480,7 +481,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété formattedName.
+     * 获取formattedName属性的值。
      * 
      * @return
      *     possible object is
@@ -494,7 +495,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété formattedName.
+     * 设置formattedName属性的值。
      * 
      * @param value
      *     allowed object is
@@ -506,7 +507,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété location.
+     * 获取location属性的值。
      * 
      * @return
      *     possible object is
@@ -520,7 +521,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété location.
+     * 设置location属性的值。
      * 
      * @param value
      *     allowed object is
@@ -532,7 +533,7 @@ public class Individual
     }
 
     /**
-     * Obtient la valeur de la propriété status.
+     * 获取status属性的值。
      * 
      * @return
      *     possible object is
@@ -546,7 +547,7 @@ public class Individual
     }
 
     /**
-     * Définit la valeur de la propriété status.
+     * 设置status属性的值。
      * 
      * @param value
      *     allowed object is

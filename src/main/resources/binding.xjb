@@ -20,9 +20,9 @@
                  org.jvnet.hyperjaxb3:hyperjaxb3-ejb-runtime:{version}
             -->
             <xjc:javaType name="java.util.Date" xmlType="xs:dateTime"  
-                                      adapter="org.tmf.dsmapi.commons.utils.CustomDateTimeAdapter" />
+                                      adapter="org.tmf.dsmapi.commons.utils.CustomJsonDateSerializer" />
             <xjc:javaType name="java.util.Date" xmlType="xs:date"  
-                                      adapter="org.tmf.dsmapi.commons.utils.CustomDateAdapter" />
+                                      adapter="org.tmf.dsmapi.commons.utils.CustomJsonDateSerializer" />
             <!-- Add @XmlRootElement annotation and plurial names to Lists 
             <xjc:simple/>-->
             <!-- Make all class implement Serializable -->
